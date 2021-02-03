@@ -1,0 +1,147 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:  ToString 涂斯吹因
+subtitle: 世界上有10种人，一种懂二进制，一种不懂二进制
+name: ToString 涂斯吹因
+email: 451863397@qq.com
+description: 略
+keywords: Java,程序员,Web
+encoding: "utf-8"
+favicon: favicon.ico 
+
+repository: zhaoxiaowu/zhaoxiaowu.github.io
+github_url: https://github.com/zhaoxiaowu
+url: zhaoxiaowu.github.io
+enforce_ssl: zhaoxiaowu.github.io
+
+## Gem
+plugins:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+  - jekyll-github-metadata
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+  syntax_highlighter: rouge
+
+syntax_highlighter_opts:
+   coderay_line_numbers:  nil
+
+# Pagination
+paginate: 12
+paginate_path: 'page:num'
+
+# Navigation. top menu list 导航 顶部菜单列表
+menus:
+
+  -
+    href: /open-source.html
+    label: Git
+    target: _self
+
+  -
+    href: /pages/about
+    label: 关于
+    target: _self
+
+
+# Navigation. main menu list
+navs:
+
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /pages/subject
+    label: Blog
+
+  -
+    href: /pages/bookmark
+    label: Bookmark
+
+  -
+    href: /archives.html
+    label: Archives
+    target: _self
+
+# labels. my blog key words
+labels:
+
+  -
+    href: /open-source.html
+    label: Git仓库
+    target: _blank
+  -
+    href: /gitchat.html
+    label: GitChat
+    target: _blank
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 6 # Number of repos to show
+
+# Google Analytics
+# analytics :
+# provider : google
+#   google :
+#     tracking_id : ''  # ex. UA-72165600-X
+
+
+# For about.html. Fell free to create your own!
+skill_software_keywords: [Java, MySQL, Oracle, Design Patterns]
+skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Redis, PHP,  Boostrap]
+skill_mobile_app_keywords: [vuejs, hyhird app]
+
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+  username: zhaoxiaowu
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+  owner: zhaoxiaowu
+  repo: zhaoxiaowu.github.io
+  oauth:
+    client_id: f542fe5107d4dbf7309d
+    client_secret: c7693487ecfeeec2045277955a2ddac89a434308
+# https://github.com/gitalk/gitalk#install
+gitalk:
+  owner: zhaoxiaowu
+  repo: zhaoxiaowu.github.io
+  clientID: f542fe5107d4dbf7309d
+  clientSecret: c7693487ecfeeec2045277955a2ddac89a434308
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : true
