@@ -2,6 +2,10 @@
 
 A Simple, Bootstrap Based Theme. Especially for developers who like to show their projects on website and like to take notes. There are also some magical features to discover. 
 
+## Fork
+
+https://github.com/fuzhengwei/fuzhengwei.github.io
+
 ## [Live Demo](http://dongchuan.github.io/)
 
 Open issues if you find bugs or even have trouble installing jekyll or dependencies. :D
