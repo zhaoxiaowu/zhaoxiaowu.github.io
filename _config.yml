@@ -61,7 +61,7 @@ menus:
     target: _self
 
   -
-    href: /pages/about
+    href: /about.html
     label: 关于
     target: _self
 
@@ -74,11 +74,11 @@ navs:
     label: 首页
 
   -
-    href: /pages/subject
+    href: /subject.html
     label: Blog
 
   -
-    href: /pages/bookmark
+    href: /bookmark.html
     label: Bookmark
 
   -
