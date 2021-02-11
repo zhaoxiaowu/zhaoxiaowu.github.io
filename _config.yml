@@ -18,7 +18,7 @@ favicon: favicon.ico
 repository: zhaoxiaowu/zhaoxiaowu.github.io
 github_url: https://github.com/zhaoxiaowu
 url: zhaoxiaowu.github.io
-enforce_ssl: zhaoxiaowu.github.io
+enforce_ssl:
 
 ## Gem
 plugins:
