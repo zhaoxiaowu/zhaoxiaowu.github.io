@@ -61,6 +61,14 @@ menus:
     target: _self
 
   -
+    href: /subject.html
+    label: Blog
+
+  -
+    href: /bookmark.html
+    label: Bookmark
+
+  -
     href: /about.html
     label: 关于
     target: _self
@@ -73,17 +81,26 @@ navs:
     href: /
     label: 首页
 
+
+
+  - href: /
+      label: 计算机基础
+      target: _self
+      subnav:
+        - subHref: /topic/design-mode.html
+          subLabel: 设计模式
   -
-    href: /subject.html
-    label: Blog
+    href: /
+    label: Java
 
   -
-    href: /bookmark.html
-    label: Bookmark
+    href: /
+    label: 架构师技术栈
+
 
   -
     href: /archives.html
-    label: Archives
+    label: 归档
     target: _self
 
 # labels. my blog key words
