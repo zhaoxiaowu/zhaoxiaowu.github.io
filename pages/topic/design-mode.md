@@ -7,7 +7,7 @@ subtitle: <span class="mega-octicon octicon-cloud-download"></span>&nbsp;&nbsp;
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 menu: 计算机基础
 css: ['blog-page.css']
-permalink: topic/design-mode
+permalink: /topic/topic
 keywords: 设计模式
 ---
 
