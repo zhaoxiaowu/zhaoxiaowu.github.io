@@ -83,11 +83,11 @@ navs:
 
   -
     href: /
-      label: 计算机基础
-      target: _self
-      subnav:
-        - subHref: /topic/design-mode.html
-          subLabel: 设计模式
+    label: 计算机基础
+    target: _self
+    subnav:
+      - subHref: /topic/design-mode.html
+        subLabel: 设计模式
   -
     href: /
     label: Java
