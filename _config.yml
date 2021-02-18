@@ -81,9 +81,8 @@ navs:
     href: /
     label: 首页
 
-
-
-  - href: /
+  -
+    href: /
       label: 计算机基础
       target: _self
       subnav:
@@ -96,7 +95,6 @@ navs:
   -
     href: /
     label: 架构师技术栈
-
 
   -
     href: /archives.html
