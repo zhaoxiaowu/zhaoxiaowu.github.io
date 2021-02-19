@@ -104,6 +104,10 @@ navs:
         subLabel: 分布式
 
   -
+    href: /
+    label: 读书笔记
+
+  -
     href: /archives.html
     label: 归档
     target: _self
