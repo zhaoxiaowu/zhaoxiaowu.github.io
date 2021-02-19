@@ -82,7 +82,7 @@ navs:
     label: 首页
 
   -
-    href: /
+    href: /topic/design-mode.html
     label: 计算机基础
     target: _self
     subnav:
@@ -112,6 +112,14 @@ labels:
     href: /gitchat.html
     label: GitChat
     target: _blank
+
+# selected articles 精选文章
+classes:
+
+  -
+    href: /topic/design-mode.html
+    name: 设计模式
+    describe:  设计模式总结笔记
 
 # ---------------- #
 #       RSS        #
