@@ -61,6 +61,10 @@ menus:
     target: _self
 
   -
+    href: /book.html
+    label: 书籍
+
+  -
     href: /subject.html
     label: 时间轴
 

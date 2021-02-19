@@ -7,9 +7,7 @@ permalink: /about.html
 css: ['about.css', 'sidebar-popular-repo.css', '../../bower_components/flag-icon-css/css/flag-icon.min.css']
 ---
 
-###  :man_technologist:  [ToString 涂斯吹因](https://tostring.cc/)
-
-👋 Hi, I'm Wu Hongyun✨,a Java developer from China 🚀. 
+###  GitHub
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -18,11 +16,11 @@ css: ['about.css', 'sidebar-popular-repo.css', '../../bower_components/flag-icon
 
 ### About
 
--  🔭**Profession :** Java Development  :fire:    
+-  🔭**Profession :** Java Development      
 -  🌱**Languages :** Java, ASM, HTML5,CSS,JS
 -  🚀**Skills :** Redis,RabbitMQ,MySql,Netty,Design mode,JVM,Spring Cloud...
--  🤔**Hobbies :** Sing , Music :headphones: & Games :video_game:
--  ⚡**Fact :** Plagiarism is the sincerest form of flattery :heart:
+-  🤔**Hobbies :** Sing , Music  & Games 
+-  ⚡**Fact :** Plagiarism is the sincerest form of flattery 
 -  💬**Contact me :** [Wu Hongyun](mailto:451863397@qq.com)
 
 ### Wait for you
