@@ -57,16 +57,16 @@ menus:
 
   -
     href: /open-source.html
-    label: Git
+    label: GitHub仓库
     target: _self
 
   -
     href: /subject.html
-    label: Blog
+    label: 时间轴
 
   -
     href: /bookmark.html
-    label: Bookmark
+    label: 常用网址
 
   -
     href: /about.html
