@@ -99,6 +99,9 @@ navs:
   -
     href: /
     label: 架构师技术栈
+    subnav:
+      - subHref: /topic/distributed.html
+        subLabel: 分布式
 
   -
     href: /archives.html
