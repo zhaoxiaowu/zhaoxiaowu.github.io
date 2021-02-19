@@ -109,8 +109,8 @@ navs:
 labels:
 
   -
-    href: /open-source.html
-    label: Git仓库
+    href: https://github.com/zhaoxiaowu
+    label: GitHub
     target: _blank
   -
     href: /gitchat.html
