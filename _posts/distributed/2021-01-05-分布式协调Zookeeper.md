@@ -2,7 +2,7 @@
 layout: post
 category: 分布式
 ---
-# 概述
+## 概述
 
 > Zookeeper 是一个开源的分布式的，为分布式应用提供协调服务的Apache 项目。
 
@@ -10,7 +10,7 @@ Zookeeper从设计模式角度来理解：是一个基于观察者模式设计�
 
 ![image-20201204203149274](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201204203149274.png)
 
-# 集群
+## 集群
 
 ![image-20201204203305759](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201204203305759.png)
 
@@ -23,9 +23,9 @@ Zookeeper从设计模式角度来理解：是一个基于观察者模式设计�
 5. 数据更新原子性，一次数据更新要么成功，要么失败。
 6. 实时性，在一定时间范围内，Client能读到最新数据。
 
-# 安装
+## 安装
 
-## 配置参数详解
+### 配置参数详解
 
 Zookeeper中的配置文件zoo.cfg中参数含义解读如下：
 
@@ -51,15 +51,15 @@ Zookeeper使用的基本时间，服务器之间或客户端与服务器之间�
 
 监听客户端连接的端口。
 
-# API应用
+## API应用
 
 略
 
-# 应用场景
+## 应用场景
 
 提供的服务包括：统一命名服务、统一配置管理、统一集群管理、服务器节点动态上下线、软负载均衡等。
 
-## 统一命名服务
+### 统一命名服务
 
 在分布式环境下，经常需要对应用/服务进行统一命名，便于识别。
 
@@ -67,7 +67,7 @@ Zookeeper使用的基本时间，服务器之间或客户端与服务器之间�
 
 ![image-20201205121146325](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201205121146325.png)
 
-## 统一配置管理
+### 统一配置管理
 
 ![image-20201205121426303](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201205121426303.png)
 
@@ -85,7 +85,7 @@ Zookeeper使用的基本时间，服务器之间或客户端与服务器之间�
 
 （3） 一旦Znode中的数据被修改，ZooKeeper将通知各个客户端服务器。
 
-## 统一集群管理
+### 统一集群管理
 
 ![image-20201205121932856](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201205121932856.png)
 
@@ -99,17 +99,17 @@ Zookeeper使用的基本时间，服务器之间或客户端与服务器之间�
 
 （2） 监听这个ZNode可获取它的实时状态变化。
 
-## 服务上下线
+### 服务上下线
 
 ![image-20201205122056897](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201205122056897.png)
 
-## 软负载均衡
+### 软负载均衡
 
 ![image-20201205122124546](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201205122124546.png)
 
-# 内部原理
+## 内部原理
 
-## 数据结构
+### 数据结构
 
 ZooKeeper数据模型的结构与Unix文件系统很类似，整体上可以看作是一棵树，每个节点称做一
 
@@ -117,7 +117,7 @@ ZooKeeper数据模型的结构与Unix文件系统很类似，整体上可以看�
 
 ![image-20201204203454759](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201204203454759.png)
 
-## 节点类型
+### 节点类型
 
 **持久（Persistent）**：客户端和服务器端断开连接后，创建的节点不删除 
 
@@ -134,7 +134,7 @@ ZooKeeper数据模型的结构与Unix文件系统很类似，整体上可以看�
 3. 临时目录节点客户端与Zookeeper断开连接后，该节点被删除
 4. 临时顺序编号目录节点客户端与Zookeeper 断开连接后， 该节点被删除， 只是Zookeeper给该节点名称进行顺序编号。
 
-## Stat 结构体
+### Stat 结构体
 
 - czxid-创建节点的事务 zxid
 
@@ -197,7 +197,7 @@ dataLength = 0
 numChildren = 1
 ```
 
-## 监听器原理
+### 监听器原理
 
 
 
@@ -220,11 +220,11 @@ numChildren = 1
 
 `ls path [watch]`
 
-## 选举机制
+### 选举机制
 
 ZAB leader选举
 
-## 写数据流程
+### 写数据流程
 
 ZAB log复制
 
@@ -233,13 +233,13 @@ ZAB log复制
 3. 当Leader收到半数以上 Server 的成功信息，说明该写操作可以执行。Leader会向各个Server 发送提交信息，各个Server收到信息后会落实队列里的写请求，此时写成功。
 4. Server1会进一步通知 Client 数据写成功了，这时就认为整个写操作成功
 
-# 服务上下线实战
+## 服务上下线实战
 
 某分布式系统中，主节点可以有多台，可以动态上下线，任意一台客户端都能实时感知到主节点服务器的上下线。
 
 
 
-#  参考
+##  参考
 
 [w3cschool Zookeeper教程](https://www.w3cschool.cn/zookeeper/)
 
