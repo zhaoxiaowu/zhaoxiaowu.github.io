@@ -88,6 +88,8 @@ navs:
     subnav:
       - subHref: /topic/design-mode.html
         subLabel: 设计模式
+      - subHref: /topic/algorithm.html
+        subLabel: 算法
   -
     href: /
     label: Java
