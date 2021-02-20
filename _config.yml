@@ -99,9 +99,13 @@ navs:
       - subHref: /topic/algorithm.html
         subLabel: 算法
   -
-    href: /
+    href: /topic/java.html
     label: Java
     subnav:
+      - subHref: /topic/java.html
+        subLabel: JAVA基础
+      - subHref: /topic/spring.html
+        subLabel: Spring
       - subHref: /topic/jdk-source-code.html
         subLabel: JDK源码
   -
@@ -110,6 +114,10 @@ navs:
     subnav:
       - subHref: /topic/distributed.html
         subLabel: 分布式
+      - subHref: /topic/middleware.html
+        subLabel: 中间件
+      - subHref: /topic/develop.html
+        subLabel: 开发
 
   -
     href: /topic/book-note.html
