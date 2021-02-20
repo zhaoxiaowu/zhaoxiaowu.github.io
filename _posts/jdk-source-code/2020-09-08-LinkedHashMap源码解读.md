@@ -15,7 +15,7 @@ category: JDK源码
 
 其中根据访问顺序排序时，每次 `get` 都会将访问的值移动到链表末尾，这样重复操作就能的到一个按照访问顺序排序的链表。
 
-### 构造方法
+## 构造方法
 
 LinkedHashMap提供了多个构造方法，我们先看空参的构造方法。
 
@@ -91,7 +91,7 @@ HashMap的构造函数中，调用了init方法，而在HashMap中init方法是�
 
 ![image-20200821051341176](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200821051341176.png)
 
-### put方法
+## put方法
 
 LinkedHashMap没有重写put方法，所以还是调用HashMap得到put方法
 
@@ -162,7 +162,7 @@ LinkedHashMap没有重写put方法，所以还是调用HashMap得到put方法
 
 跟HashMap的put类似，只不过多了把新增的Entry加入到双向列表中。
 
-### 扩容
+## 扩容
 
 LinkedHashMap重写了transfer方法，数据的迁移，它的实现如下：
 
@@ -191,7 +191,7 @@ LinkedHashMap是遍历的双向链表，取得每一个Entry，然后重新计�
 
 从遍历的效率来说，遍历双向链表的效率要高于遍历table，因为遍历双向链表是N次（N为元素个数）；而遍历table是N+table的空余个数（N为元素个数）。
 
-### 双向链表的重排序
+## 双向链表的重排序
 
 HashMap的put方法中的如下代码：
 
@@ -231,7 +231,7 @@ HashMap的put方法中的如下代码：
 
 在LinkedHashMap中，只有accessOrder为true，即是访问顺序模式，才会put时对更新的Entry进行重新排序
 
-### get方法
+## get方法
 
 LinkedHashMap有对get方法进行了重写，如下：
 
@@ -251,7 +251,7 @@ LinkedHashMap有对get方法进行了重写，如下：
 
 后面调用了LinkedHashMap.Entry的recordAccess方法，上面分析过put过程中这个方法，其实就是在访问顺序的LinkedHashMap进行了get操作以后，重新排序，把get的Entry移动到双向链表的表尾。
 
-### 参考
+## 参考
 
 [LinkedHashMap 底层分析](https://juejin.im/post/6844903560589606925)
 

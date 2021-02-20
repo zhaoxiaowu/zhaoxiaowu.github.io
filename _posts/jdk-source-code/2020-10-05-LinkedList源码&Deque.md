@@ -2,21 +2,21 @@
 layout: post
 category: JDK源码
 ---
-# 一、简述
+## 一、简述
 
-## 继承结构
+### 继承结构
 
 ![image-20200827103550217](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200827103550217.png)
 
-## Deque
+### Deque
 
 > Deque接口是“double ended queue”的缩写(通常读作“deck”)，即双端队列，支持在线性表的两端插入和删除元素.因此，我们很可以认为，Deque接口既可以当做队列，也可以当做栈。
 
 我们可以发现**LinkList以链表结构，同时实现了队列和栈**
 
-# 二、分析
+## 二、分析
 
-## List
+### List
 
 在分析LinkedList之前，还是先瞄一眼List接口，虽然前篇已经看过一遍了，但为了明确下文的分析方向，还是先把List接口中的几个增删改查方法再列一次。
 
@@ -32,9 +32,9 @@ public interface List<E> extends Collection<E> {
 }
 ```
 
-## LinkedList
+### LinkedList
 
-### 1、成员变量
+#### 1、成员变量
 
 ```
 public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>, Deque<E>, Cloneable, java.io.Serializable{
@@ -54,9 +54,9 @@ LinkedList的成员变量很少，就上面那3个，其中first和last都是Nod
 > 要注意：
 >  first和last仅仅只是节点而已，跟数据元素没有关系，可以认为就是2个额外的"指针"，分别指着链表的头和尾。
 
-### 2、构造函数
+#### 2、构造函数
 
-#### 1）LinkedList
+##### 1）LinkedList
 
 ```
 public LinkedList() {
@@ -65,7 +65,7 @@ public LinkedList() {
 
 LinkedList的构造函数有2个，以平时最常用的构造函数为例，发现该构造函数什么事都没做。
 
-#### 2）Node
+##### 2）Node
 
 ```
 private static class Node<E> {
@@ -87,9 +87,9 @@ private static class Node<E> {
 
 好了，那下面就看看LinkedList是怎么进行增、删、改、查的。
 
-### 3、增
+#### 3、增
 
-#### 1）add(E e)
+##### 1）add(E e)
 
 ```
 public boolean add(E e) {
@@ -121,7 +121,7 @@ void linkLast(E e) {
 
 通过对add(E e)方法的分析，我们也知道了，原来LinkedList中的元素就是一个个的节点（Node），而真正的数据则存放在Node之中（数据被Node的item所引用）。
 
-#### 2）add(int index, E element)
+##### 2）add(int index, E element)
 
 ```
 public void add(int index, E element) {
@@ -163,7 +163,7 @@ void linkBefore(E e, Node<E> succ) {
 
 对于链表的操作还是有些复杂的，特别是这种双向链表，不过仔细理解下，也不是什么问题（看不懂的可以边看步骤边动手画一画）。到这里，对于LinkedList的第一个添加方法就分析完了。
 
-##### 下面是对node(int index)方法的分析：
+###### 下面是对node(int index)方法的分析：
 
 这也是LinkedList获取元素的核心方法，相当重要，因为后面会出现很多次，这里就顺带先分析一下了。
 
@@ -189,9 +189,9 @@ Node<E> node(int index) {
   跟ArrayList相比，因为ArrayList底层是数组实现，拥有下标这个特性，在获取元素时，不需要对集合进行遍历，所以查找某个元素会特别快（在数据量特别多的情况下，ArrayList和LinkedList在效率上的差别就相当明显了）。
   不过，LinkedList对元素的获取还是做了一定优化的，它对index与集合长度的一半做比较，来确定是在集合的前半段还是后半段进行查找。
 
-### 4、删
+#### 4、删
 
-#### 1）remove(int index)
+##### 1）remove(int index)
 
 ```
 public E remove(int index) {
@@ -249,7 +249,7 @@ E unlink(Node<E> x) {
 
 4. 最后，让记录集合长度的size减1。
 
-#### 2）remove(Object o)
+##### 2）remove(Object o)
 
 ```
 public boolean remove(Object o) {
@@ -275,11 +275,11 @@ public boolean remove(Object o) {
 
 remove(Object o)这个删除元素的方法的形参o是数据本身，而不是LinkedList集合中的元素（节点），所以需要先通过节点遍历的方式，找到o数据对应的元素，然后再调用unlink(Node x)方法将其删除，关于unlink(Node x)的分析在第一个删除方法中已经提到了，可往回再看看。
 
-### 5、查 & 改
+#### 5、查 & 改
 
 LinkedList集合对数据的获取与修改均通过node(int index)方法来执行往后的操作，关于node(int index)方法的分析也已经在第一个添加方法的时候已经提过，这里也就不再啰嗦了。
 
-#### 1）set(int index, E element)
+##### 1）set(int index, E element)
 
 ```
 public E set(int index, E element) {
@@ -292,7 +292,7 @@ public E set(int index, E element) {
  
 ```
 
-#### 2）get(int index)
+##### 2）get(int index)
 
 ```
 public E get(int index) {
@@ -302,7 +302,7 @@ public E get(int index) {
  
 ```
 
-# 三、队列Queue
+## 三、队列Queue
 
 这里要顺带分析下java中的队列实现，why？因为java中队列的实现就是LinkedList，你可能会疑问，队列的英文是Queue，在java中也有对应的接口，怎么会跟LinkedList扯上关系呢？因为LinkedList实现了队列：
 
@@ -322,7 +322,7 @@ public interface Deque<E> extends Queue<E> {...}
 
 从这两者的关系，不难得出，队列的实现方式也是链表。下面先来看看Queue的接口声明：
 
-## 1、Queue
+### 1、Queue
 
 我们知道，队列是先进先出的，添加元素只能从队尾添加，删除元素只能从队头删除，Queue中的方法就体现了这种特性。
 
@@ -342,9 +342,9 @@ public interface Queue<E> extends Collection<E> {
 
 从上面这几个方法出发，来看看LinkedList是如何实现的。
 
-## 2、LinkedList对Queue的实现
+### 2、LinkedList对Queue的实现
 
-### 1）增
+#### 1）增
 
 ```
 public boolean offer(E e) {
@@ -355,7 +355,7 @@ public boolean offer(E e) {
 
 可以看到，在LinkedList中，队列的offer(E e)方法实际上是调用了LinkedList的add(E e)，add(E e)已经在最前面分析过了，就是在链表的尾部添加一个元素~
 
-### 2）删
+#### 2）删
 
 ```
 public E poll() {
@@ -383,7 +383,7 @@ private E unlinkFirst(Node<E> f) {
 
 poll()方法先拿到队头元素 f ，若 f 不为null，就调用unlinkFirst(Node f)其删除。unlinkFirst(Node f)在实现上跟unlink(Node x)差不多且相对简单，这里不做过多说明。
 
-### 3）查
+#### 3）查
 
 ```
 public E peek() {
@@ -395,7 +395,7 @@ public E peek() {
 
 peek()先通过first拿到队头元素，然后取出元素中的数据实体返回而已。
 
-# 四：栈Stack
+## 四：栈Stack
 
 ```
 public void push(E e) {
@@ -407,11 +407,11 @@ public E pop() {
 }
 ```
 
-# 五：Deque的顺序存储ArrayDeque
+## 五：Deque的顺序存储ArrayDeque
 
 ArrayDeque 用一个动态数组实现了栈和队列所需的所有操作。
 
-### 添加元素
+#### 添加元素
 
 ```
     public void addFirst(E e) {
@@ -449,7 +449,7 @@ ArrayDeque 用一个动态数组实现了栈和队列所需的所有操作。
 
 这里可以看到，无论是头部还是尾部添加新元素，当需要扩容时，会直接变化为原来的2倍。同时需要复制并移动大量的元素。
 
-### 删除元素
+#### 删除元素
 
 ```
 public E pollFirst() {
@@ -480,7 +480,7 @@ public E pollFirst() {
 
 从头部和尾部删除（获取）元素，就比较方便了，修改head和tail位置即可。head是当前数组中第一个元素的位置，tail是数组中第一个空的位置。
 
-## BlockingDeque
+### BlockingDeque
 
 ```
 /**
@@ -497,7 +497,7 @@ public interface BlockingDeque<E> extends BlockingQueue<E>, Deque<E> {
 
 **这里比较一下可以发现，对于栈和队列这两种特殊的数据结构，由于获取（查找）元素的位置已经被限定，因此采用顺序存储结构并没有非常大的优势，反而是在添加元素由于数组容量的问题还会带来额外的消耗；因此，在无法预先知道数据容量的情况下，使用链式结构实现栈和队列应该是更好的选择。**	
 
-# 六、总结
+## 六、总结
 
 1. LinkedList是基于链表实现的，并且是双向链表。
 2. LinkedList中的元素就是一个个的节点，而真正的数据则存放在Node之中。
@@ -509,5 +509,5 @@ public interface BlockingDeque<E> extends BlockingQueue<E>, Deque<E> {
 
 [数据结构-栈&队列&Deque实现比较](https://juejin.im/post/6844903505325473799)
 
-[LinkedList与Queue源码分析](https://juejin.im/post/6844903509633024013#heading-21)
+[LinkedList与Queue源码分析](https://juejin.im/post/6844903509633024013##heading-21)
 
