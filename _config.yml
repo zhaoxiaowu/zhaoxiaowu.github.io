@@ -127,6 +127,10 @@ labels:
     href: https://github.com/zhaoxiaowu
     label: GitHub
     target: _blank
+
+  - href: https://gitee.com/tostringcc
+    label: GitChat
+    target: _blank
   -
     href: /gitchat.html
     label: GitChat
