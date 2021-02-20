@@ -65,6 +65,10 @@ menus:
     label: 书籍
 
   -
+    href: /pdf.html
+    label: PDF阅读
+
+  -
     href: /subject.html
     label: 时间轴
 
