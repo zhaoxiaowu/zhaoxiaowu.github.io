@@ -97,7 +97,7 @@ navs:
       - subHref: /topic/design-mode.html
         subLabel: 设计模式
       - subHref: /topic/algorithm.html
-        subLabel: 算法
+        subLabel: 算法和数据结构
   -
     href: /topic/java.html
     label: Java
@@ -109,7 +109,7 @@ navs:
       - subHref: /topic/jdk-source-code.html
         subLabel: JDK源码
   -
-    href: /
+    href: /topic/distributed.html
     label: 架构师技术栈
     subnav:
       - subHref: /topic/distributed.html
