@@ -7,6 +7,7 @@ permalink: /pdf.html
 ---
 
 ## PDF目录
+
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=2020年字节跳动Java工程师面试题.pdf" target="_blank">2020年字节跳动Java工程师面试题</a>
 
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf" target="_blank">compressed.tracemonkey-pldi-09</a>
@@ -44,14 +45,6 @@ permalink: /pdf.html
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=分布式事务专题.pdf" target="_blank">分布式事务专题</a>
 
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=剑指offer.pdf" target="_blank">剑指offer</a>
-
-- <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=咪咕架构师\Tomcat基础升华篇笔记.pdf" target="_blank">Tomcat基础升华篇笔记</a>
-
-- <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=咪咕架构师\Tomcat性能优化篇笔记.pdf" target="_blank">Tomcat性能优化篇笔记</a>
-
-- <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=咪咕架构师\【课堂笔记】Mycat基础.pdf" target="_blank">【课堂笔记】Mycat基础</a>
-
-- <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=咪咕架构师\【课堂笔记】Mycat进阶.pdf" target="_blank">【课堂笔记】Mycat进阶</a>
 
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=数学之美-第2版.pdf" target="_blank">数学之美-第2版</a>
 
@@ -330,7 +323,6 @@ permalink: /pdf.html
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=重学Java设计模式·小傅哥(公众号：bugstack虫洞栈).pdf" target="_blank">重学Java设计模式·小傅哥(公众号：bugstack虫洞栈)</a>
 
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=高性能MySQL.pdf" target="_blank">高性能MySQL</a>
-
 
 **PDF目录生成程序：**
 
