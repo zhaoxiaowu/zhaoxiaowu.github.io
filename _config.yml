@@ -137,7 +137,7 @@ labels:
     target: _blank
 
   - href: https://gitee.com/tostringcc
-    label: GitChat
+    label: Gitee
     target: _blank
   -
     href: /gitchat.html
@@ -151,6 +151,10 @@ classes:
     href: /topic/design-mode.html
     name: 设计模式
     describe:  设计模式总结笔记
+
+  - href: /topic/dbook-note.html
+    name: 读书笔记
+    describe:  “好记性不如烂笔头”读书笔记能帮助记忆。
 
 # ---------------- #
 #       RSS        #
