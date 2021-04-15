@@ -46,6 +46,8 @@ permalink: /pdf.html
 
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=剑指offer.pdf" target="_blank">剑指offer</a>
 
+- <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=实战Java高并发程序设计（第2版） .pdf" target="_blank">实战Java高并发程序设计（第2版） </a>
+
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=数学之美-第2版.pdf" target="_blank">数学之美-第2版</a>
 
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=架构师之路\1-架构师内功心法\【课堂笔记】为什么要从设计模式开始及工厂模式详解.pdf" target="_blank">【课堂笔记】为什么要从设计模式开始及工厂模式详解</a>
@@ -311,6 +313,8 @@ permalink: /pdf.html
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=架构师之路\7-架构师修养\参考简历模板二.pdf" target="_blank">参考简历模板二</a>
 
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=深入理解Java虚拟机.pdf" target="_blank">深入理解Java虚拟机</a>
+
+- <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=码出高效：Java开发手册.pdf" target="_blank">码出高效：Java开发手册</a>
 
 - <a href="https://tostringcc.gitee.io/pdf/web/viewer.html?file=程序员代码面试指南 IT名企算法与数据结构题目最优解 .pdf" target="_blank">程序员代码面试指南 IT名企算法与数据结构题目最优解 </a>
 
