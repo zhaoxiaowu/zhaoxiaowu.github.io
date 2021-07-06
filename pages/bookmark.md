@@ -82,7 +82,7 @@ permalink: /bookmark.html
 
 [纯洁的微笑](http://www.ityouknow.com/)
 
-[嘎里三分熟 | 个人学习博客站](http://www.jetchen.cn/)
+[嘎里三分熟](http://www.jetchen.cn/)
 
 [江南一点雨](http://www.javaboy.org/)
 
