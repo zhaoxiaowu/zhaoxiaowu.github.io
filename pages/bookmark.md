@@ -32,7 +32,7 @@ permalink: /bookmark.html
 
 [labuladong的算法小抄](https://labuladong.gitee.io/algo/)
 
-### 设计模式
+## 设计模式
 
 [免费在线学习代码重构和设计模式](https://refactoringguru.cn/)
 
