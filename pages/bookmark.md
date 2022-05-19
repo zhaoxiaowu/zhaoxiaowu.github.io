@@ -6,80 +6,152 @@ menu: Bookmark
 permalink: /bookmark.html
 ---
 
-## Java
-- [Dom4j](https://dom4j.github.io/) - Flexible XML framework
-- [Gson](https://github.com/google/gson) - Google Library to support JSON
-- [Xstream](http://x-stream.github.io/index.html) -  Serialize objects to XML and back again
-- [JAXB](https://jaxb.java.net/) - Java Architecture for XML Binding
+## 综合
 
-## Android
-- [Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader) - Powerful and flexible library for loading, caching and displaying images
-- [greenDAO](http://greendao-orm.com/) - greenDAO is a light and fast ORM solution that maps objects to SQLite databases
-- [EventBus](http://greenrobot.github.io/EventBus/) - Android optimized event bus that simplifies communication
+[芋道源码](https://www.iocoder.cn/coke/)
 
-## PHP
-- [Idiorm](https://github.com/j4mie/idiorm/) - A lightweight nearly-zero-config object-relational mapper and fluent query builder for PHP5
-- [GitElephant](https://github.com/matteosister/GitElephant) - An abstraction layer to manage your git repositories with php
-- [Propel](https://github.com/propelorm/Propel) - ORM for PHP5
-- [SimpleDOM](https://code.google.com/archive/p/simpledom/) - Built upon SimpleXML and provids DOM methods using SimpleXML's syntax.
+[芋道源码VIP](http://svip.iocoder.cn/index/) 
 
-### Symfony
-- [NelmioApiDocBundle](https://github.com/nelmio/NelmioApiDocBundle) - Generate a decent documentation for your APIs
-- [FOSRestBundle](http://symfony.com/doc/current/bundles/FOSRestBundle/index.html) - Creat a REST API with Symfony2
+[bugstack](https://bugstack.cn/)
 
-## Javascript
-- [fullPage.js](http://alvarotrigo.com/fullPage/) - To create fullscreen scrolling websites / single page websites
-- [lunr.js](http://lunrjs.com/) - Simple full-text search
-- [Trip.js](http://eragonj.github.io/Trip.js/index.html) - Help you customize a tutorial trip easily with more flexibilities
-- [Moment.js](http://momentjs.com/) - Parse, validate, manipulate, and display dates in JavaScript.
-- [Underscore.js](http://underscorejs.org/) - It provides a whole mess of useful functional programming helpers without extending any built-in objects.
+[并发编程网 – ifeve.com](https://ifeve.com/)
 
-### AngularJs
-- [Protractor](http://angular.github.io/protractor) - End-to-end test framework for AngularJS applications
-- [angular-media-player](https://github.com/colthreepv/angular-media-player) - Directive for audio and video
-- [Smart table](http://lorenzofox3.github.io/smart-table-website/) - Module to easily display data in a table
-- [ng-table](http://esvit.github.io/ng-table/#/) - Module to easily display data in a table
-- [ngToast](https://github.com/tameraydin/ngToast) - AngularJS toast
-- [ANGM-GENERATOR](http://newaeonweb.com.br/generator-angm/) - AngularJS Yeoman Generator
+[美团技术](https://tech.meituan.com/)
 
-### Node.js
-- [utility](https://github.com/node-modules/utility) - A collection of useful utilities
-- [cheerio](https://github.com/cheeriojs/cheerio) - Implementation of core jQuery designed specifically for the server
-- [mongoose](http://mongoosejs.com/) - elegant mongodb object modeling for node.js
-- [SuperAgent](http://visionmedia.github.io/superagent/) - Super Agent is light-weight progressive ajax API
-- [connect-mongo](https://github.com/kcbanner/connect-mongo) - MongoDB session store for Express and Connect
-- [Morgan](https://github.com/expressjs/morgan) - HTTP request logger middleware for node.js
+[360 核心安全](https://blogs.360.cn/)
 
-## CSS
-- [loaders.css](https://connoratherton.com/loaders) - Delightful and performance-focused pure css loading animations
-- [Load Awesome](http://github.danielcardoso.net/load-awesome/animations.html) - Pure CSS Loaders and Spinners 
-- [Hover.css](http://ianlunn.github.io/Hover/) - Collection of CSS3 powered hover effects
-- [Animate.css](https://github.com/daneden/animate.css) - Bunch of cool, fun, and cross-browser animation. 
+[阿里数据库内核月报](http://mysql.taobao.org/monthly/)
 
-## Front-end web UI/Framework
-- [Bootstrap](http://getbootstrap.com/) - HTML, CSS, and JS framework for developing responsive, mobile first projects on the web
-- [Angular-Material](https://material.angularjs.org/latest/) - Implementation of Google's Material Design Specification
+[jenkov Tutorials](http://tutorials.jenkov.com/)
 
-## Fonts
-- [Google Fonts](https://www.google.com/fonts) - So it's google fonts :D
+[GitChat](https://gitbook.cn/)
 
-## Icons
-- [Github-Octicons](https://octicons.github.com/) - GitHub's icons
-- [Font-Awesome](https://fortawesome.github.io/Font-Awesome/) - Scalable vector icons that can instantly be customized
-- [Iconfont](http://www.iconfont.cn/) - Alibaba Icon Library (Chinese)
-- [flag-icon-css](http://lipis.github.io/flag-icon-css/) - Country Flags
-- [weloveiconfonts](http://weloveiconfonts.com/) - Icon fonts
-- [Material Icon](https://design.google.com/icons/#ic_accessibility) - Material icons
+[敖丙](https://github.com/AobingJava/JavaFamily)
 
-## Color
-- [Minimalist-Color-Palettes](https://www.behance.net/gallery/32154055/Minimalist-Color-Palettes-2015) - Minimalist Color Palettes
+## 算法
 
-## Tool
-- [ProcessOn](https://www.processon.com/) - UML web app for team (Chinese)
-- [draw.io](https://www.draw.io/) - UML web app for team
-- [WinSCP](https://winscp.net/eng/download.php) - SFTP, SCP and FTP client for Windows
+[五分钟算法](https://www.cxyxiaowu.com/)
 
-## Books
-- [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet) - GitHub Practical Tips
-- [Git Quick Reference](http://jonas.nitro.dk/git/quick-reference.html) - Git Quick Reference
-- [HTTP API Design Guide](https://geemus.gitbooks.io/http-api-design/content/en/index.html) - HTTP+JSON API design practices
+[labuladong的算法小抄](https://labuladong.gitee.io/algo/)
+
+## 设计模式
+
+[免费在线学习代码重构和设计模式](https://refactoringguru.cn/)
+
+## Git
+
+[《大厂面试指北》](http://notfound9.github.io/interviewGuide/#/)
+
+[LeetCodeAnimation(用动画的形式呈现解LeetCode题目的思路）](https://github.com/MisterBooo/LeetCodeAnimation)
+
+[CS-Notes](https://github.com/CyC2018/CS-Notes)
+
+[JavaGuide](https://snailclimb.gitee.io/javaguide/#/)
+
+[architect-awesome: 后端架构师技术图谱](https://github.com/xingshaocheng/architect-awesome)
+
+[JavaMap: 提供Java知识地图](https://github.com/smileArchitect/JavaMap)
+
+[kamranahmedse/developer-roadmap: Roadmap to becoming a web developer in 2020](https://github.com/kamranahmedse/developer-roadmap)
+
+[java · GitHub Topics](https://github.com/topics/java)
+
+[Your Stars](https://github.com/zhaoxiaowu?tab=stars)
+
+[Home · fuzhengwei/CodeGuide Wiki](https://github.com/fuzhengwei/CodeGuide/wiki)
+
+[java-design-patterns/zh at master · iluwatar/java-design-patterns](https://github.com/iluwatar/java-design-patterns/tree/master/zh)
+
+[Introduction - 深入浅出Java多线程](https://redspider.gitbook.io/concurrent/)
+
+[Mycat1权威指南 · 语雀](https://www.yuque.com/books/share/0576de75-ffc4-4c34-8586-952ae4636944)
+
+## 工具
+
+[开发 - 咖啡吧导航](https://ops-coffee.cn/develop.html)
+
+[CODELF](http://unbug.github.io/codelf/)
+
+[Welcome to Codota!](https://www.codota.com/code)
+
+[Maven Repository: Search/Browse/Explore](http://mvnrepository.com/)
+
+## 博客
+
+[关于我和我的偶像们 - 莫那·鲁道的技术博客](http://thinkinjava.cn/about/)
+
+[rickiyang - 博客园](https://www.cnblogs.com/rickiyang/)
+
+[纯洁的微笑](http://www.ityouknow.com/)
+
+[嘎里三分熟](http://www.jetchen.cn/)
+
+[江南一点雨](http://www.javaboy.org/)
+
+## 目录
+
+[《Maven官方文档》目录指南](https://ifeve.com/maven-index-2/)
+
+[狂神说](https://blog.csdn.net/qq_33369905)
+
+[Netty](https://crossoverjie.top/categories/Netty/)
+
+[Redis 命令参考 — Redis 命令参考](http://redisdoc.com/)
+
+[GVP - 码云最有价值开源项目计划 - 码云 Gitee.com](https://gitee.com/gvp)
+
+[(7条消息)超实用的IDEA插件推荐_明明如月的专栏-CSDN博客](https://blog.csdn.net/w605283073/article/details/89163627)
+
+## 官网
+
+[mybatis](https://mybatis.org/mybatis-3/zh/)
+
+[Kubernetes ](https://kubernetes.io/zh/)
+
+[dubbo](https://dubbo.apache.org/zh/docs/v2.7/)
+
+[shardingsphere](https://shardingsphere.apache.org/document/current/cn/overview/)
+
+[Sentinel](https://github.com/alibaba/Sentinel/wiki/%E4%BB%8B%E7%BB%8D)
+
+[PIG](https://www.kancloud.cn/lengleng/pig-guide/627970)
+
+[PIG商业白皮书](http://paper.pig4cloud.com/)
+
+[Hutool](https://hutool.cn/docs/#/)
+
+[Nacos](https://nacos.io/zh-cn/docs/what-is-nacos.html)
+
+[微信开放文档](https://developers.weixin.qq.com/doc/oplatform/Website_App/WeChat_Login/Wechat_Login.html)
+
+[Docker](https://docs.docker.com/get-started/overview/)
+
+[Elasticsearch: 权威指南](https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html)
+
+[Spring Boot 中文文档](http://felord.cn/_doc/_springboot/2.1.5.RELEASE/_book/)
+
+[spring](https://spring.io/projects/spring-framework)
+
+[JWT](https://jwt.io/introduction/)
+
+[Spring Cloud Alibaba Reference Documentation](https://spring-cloud-alibaba-group.github.io/github-pages/edgware/spring-cloud-alibaba.html)
+
+[Spring Cloud Gateway](https://cloud.spring.io/spring-cloud-gateway/2.1.x/single/spring-cloud-gateway.html)
+
+[Spring REST Docs](https://spring.io/projects/spring-restdocs)
+
+[spring-cloud-alibaba/README-zh.md at master · alibaba/spring-cloud-alibaba](https://github.com/alibaba/spring-cloud-alibaba/blob/master/README-zh.md)
+
+[MongoDB中文手册](https://docs.mongoing.com/)
+
+[OAuth2](https://projects.spring.io/spring-security-oauth/docs/oauth2.html)
+
+[Seata 快速开始](http://seata.io/zh-cn/docs/user/quickstart.html)
+
+## 前端
+
+[vue-element-admin](https://panjiachen.gitee.io/vue-element-admin-site/zh/guide/#%E5%8A%9F%E8%83%BD)
+
+[VUE](https://cn.vuejs.org/v2/guide/)
+
+[Kang's Blog - 爱分享，乐学习](https://kangblogs.top/)
