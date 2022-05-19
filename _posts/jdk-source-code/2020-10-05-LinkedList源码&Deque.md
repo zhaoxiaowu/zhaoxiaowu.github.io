@@ -6,7 +6,7 @@ category: JDK源码
 
 ### 继承结构
 
-![image-20200827103550217](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200827103550217.png)
+![image-20200827103550217](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200827103550217.png)
 
 ### Deque
 
@@ -229,23 +229,23 @@ E unlink(Node<E> x) {
 
 1. 通过要删除的元素x拿到它的前驱节点prev和后继节点next。
 
-   ![image-20201108205358898](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201108205358898.png)
+   ![image-20201108205358898](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201108205358898.png)
 
 2. 若前驱节点prev为null，说明x是集合中的首个元素，直接将first指向后继节点next即可；
 
-   ![image-20201108205413520](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201108205413520.png)
+   ![image-20201108205413520](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201108205413520.png)
 
    若不为null，则让前驱节点prev的next指向后继节点next，再将x的prev置空。（这时prev与x的关联就解除了，并与next建立了联系）。
 
-   ![image-20201108205430993](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201108205430993.png)
+   ![image-20201108205430993](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201108205430993.png)
 
 3. 若后继节点next为null，说明x是集合中的最后一个元素，直接将last指向前驱节点prev即可；（下图分别对应步骤2中的两种情况）
 
-   ![image-20201108205438513](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201108205438513.png)
+   ![image-20201108205438513](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201108205438513.png)
 
    若不为null，则让后继节点next的prev指向前驱节点prev，再将x的next置空。（这时next与x的关联就解除了，并与prev建立了联系）。
 
-   ![image-20201108205445569](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201108205445569.png)
+   ![image-20201108205445569](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201108205445569.png)
 
 4. 最后，让记录集合长度的size减1。
 

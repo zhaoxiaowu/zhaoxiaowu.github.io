@@ -89,7 +89,7 @@ HashMap的构造函数中，调用了init方法，而在HashMap中init方法是�
 
 所以LinkedHashMap构造函数，主要就是调用HashMap构造函数初始化了一个Entry[] table，然后调用自身的init初始化了一个只有头结点的双向链表。完成了如下操作：
 
-![image-20200821051341176](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200821051341176.png)
+![image-20200821051341176](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200821051341176.png)
 
 ## put方法
 
@@ -158,7 +158,7 @@ LinkedHashMap没有重写put方法，所以还是调用HashMap得到put方法
 
 从这里就可以看出，当put元素时，不但要把它加入到HashMap中去，还要加入到双向链表中，所以可以看出LinkedHashMap就是HashMap+双向链表，下面用图来表示逐步往LinkedHashMap中添加数据的过程，红色部分是双向链表，黑色部分是HashMap结构，header是一个Entry类型的双向链表表头，本身不存储数据。
 
-![image-20200821052634585](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200821052634585.png)
+![image-20200821052634585](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200821052634585.png)
 
 跟HashMap的put类似，只不过多了把新增的Entry加入到双向列表中。
 

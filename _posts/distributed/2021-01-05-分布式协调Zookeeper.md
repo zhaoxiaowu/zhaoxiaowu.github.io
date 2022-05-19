@@ -8,11 +8,11 @@ category: 分布式
 
 Zookeeper从设计模式角度来理解：是一个基于观察者模式设计的分布式服务管理框架，它负责存储和管理大家都关心的数据，然后接受观察者的注册， 一旦这些数据的状态发生变化， Zookeeper就将负责通知已经在Zookeeper上注册的那些观察者做出相应的反应。
 
-![image-20201204203149274](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201204203149274.png)
+![image-20201204203149274](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201204203149274.png)
 
 ## 集群
 
-![image-20201204203305759](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201204203305759.png)
+![image-20201204203305759](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201204203305759.png)
 
 采用ZAB共识算法：
 
@@ -65,11 +65,11 @@ Zookeeper使用的基本时间，服务器之间或客户端与服务器之间�
 
 例如：IP不容易记住，而域名容易记住
 
-![image-20201205121146325](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201205121146325.png)
+![image-20201205121146325](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201205121146325.png)
 
 ### 统一配置管理
 
-![image-20201205121426303](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201205121426303.png)
+![image-20201205121426303](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201205121426303.png)
 
 1） 分布式环境下，配置文件同步非常常见。
 
@@ -87,7 +87,7 @@ Zookeeper使用的基本时间，服务器之间或客户端与服务器之间�
 
 ### 统一集群管理
 
-![image-20201205121932856](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201205121932856.png)
+![image-20201205121932856](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201205121932856.png)
 
 1）分布式环境中，实时掌握每个节点的状态是必要的。
 
@@ -101,11 +101,11 @@ Zookeeper使用的基本时间，服务器之间或客户端与服务器之间�
 
 ### 服务上下线
 
-![image-20201205122056897](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201205122056897.png)
+![image-20201205122056897](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201205122056897.png)
 
 ### 软负载均衡
 
-![image-20201205122124546](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201205122124546.png)
+![image-20201205122124546](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201205122124546.png)
 
 ## 内部原理
 
@@ -115,7 +115,7 @@ ZooKeeper数据模型的结构与Unix文件系统很类似，整体上可以看�
 
 个ZNode。每一个ZNode默认能够存储1MB的数据，每个ZNode都可以通过其路径唯一标识
 
-![image-20201204203454759](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201204203454759.png)
+![image-20201204203454759](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201204203454759.png)
 
 ### 节点类型
 
@@ -123,7 +123,7 @@ ZooKeeper数据模型的结构与Unix文件系统很类似，整体上可以看�
 
 **短暂（Ephemeral）**：客户端和服务器端断开连接后，创建的节点自己删除
 
-![image-20201204203727433](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201204203727433.png)
+![image-20201204203727433](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201204203727433.png)
 
 说明：创建znode时设置顺序标识，znode名称后会附加一个值，顺序号是一个单调递增的计数器，由父节点维护
 

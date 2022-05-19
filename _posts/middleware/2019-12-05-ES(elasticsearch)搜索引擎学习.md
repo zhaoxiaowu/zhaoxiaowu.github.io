@@ -14,6 +14,6 @@ category: 中间件
 
 ## 思维导图
 
-![](https://gitee.com/tostringcc/blog/raw/master/2020/20191128141038172.png)
+![](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/20191128141038172.png)
 
-![](https://gitee.com/tostringcc/blog/raw/master/2020/Elasticsearch7.X学习路线图.png)
+![](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/Elasticsearch7.X学习路线图.png)

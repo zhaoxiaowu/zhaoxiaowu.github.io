@@ -62,7 +62,7 @@ public void write() {
 
 大家看下面的图，一起来体会一下这个过程：
 
-![image-20200825182355255](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200825182355255.png)
+![image-20200825182355255](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200825182355255.png)
 
 关键问题来了，那那个写线程现在把副本数组给修改完了，现在怎么才能让读线程感知到这个变化呢？
 
@@ -131,7 +131,7 @@ public void write() {
 
 话不多说，大家看下图：
 
-![image-20200825182338281](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200825182338281.png)
+![image-20200825182338281](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200825182338281.png)
 
 这个时候Kafka的内存缓冲用的是什么数据结构呢？大家看源码：
 

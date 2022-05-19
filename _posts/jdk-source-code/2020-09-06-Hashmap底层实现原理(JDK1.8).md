@@ -75,7 +75,7 @@ JDK1.8 中对 Hashmap 做了以下改动。
 
 JDK1.8 中，Hashmap 将基本元素由 Entry 换成了 Node，不过查看源码后发现换汤不换药，这里没啥好说的。
 
-![image-20200820020719939](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200820020719939.png)
+![image-20200820020719939](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200820020719939.png)
 
 **put的源码**
 
@@ -296,9 +296,9 @@ HaspMap扩容就是就是先计算 新的hash表容量和新的容量阀值，�
 
 因为n是2的整次幂，二进制表示除了最高位为1外，其他低位全为0，那么e.hash & oldCap 是否等于0,取决于n对应最高位 相对于e.hash那一位是0还是1，比如说n = 16，二进制为10000，第5位为1，e.hash & oldCap 是否等于0就取决于e.hash第5 位是0还是1，这就相当于有50%的概率放在新hash表低位，50%的概率放在新hash表高位。大家应该明白了e.hash & oldCap == 0的好处与作用了吧。
 
-![image-20200820022614984](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200820022614984.png)
+![image-20200820022614984](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200820022614984.png)
 
-![image-20200820022623550](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200820022623550.png)
+![image-20200820022623550](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200820022623550.png)
 
 ### **常见问题**
 

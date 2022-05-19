@@ -30,7 +30,7 @@ paxos其实是一个共识算法。系统的最终一致性，不仅需要共识
 
 以最简单的两副本为例，首先来看看传统的主从同步方式。
 
-![img](https://gitee.com/tostringcc/blog/raw/master/2020/v2-6a26bdb3f035ebcabb18691703a89600_1440w.jpg)
+![img](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/v2-6a26bdb3f035ebcabb18691703a89600_1440w.jpg)
 
 
 
@@ -38,25 +38,25 @@ paxos其实是一个共识算法。系统的最终一致性，不仅需要共识
 
 写请求首先发送给主副本，主副本同步更新到其它副本后返回。这种方式可以保证副本之间数据的强一致性，写成功返回之后从任意副本读到的数据都是一致的。但是可用性很差，只要任意一个副本写失败，写请求将执行失败。
 
-![img](https://gitee.com/tostringcc/blog/raw/master/2020/v2-6cbe60837d44e7eceb2f000dc66d0c65_1440w.jpg)
+![img](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/v2-6cbe60837d44e7eceb2f000dc66d0c65_1440w.jpg)
 
 <center>主从同步的弱可用性</center>
 
 如果采用异步复制的方式，主副本写成功后立即返回，然后在后台异步的更新其它副本。
 
-![img](https://gitee.com/tostringcc/blog/raw/master/2020/v2-67145cc44047cdbb0a7d55014f4d13bc_1440w.jpg)
+![img](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/v2-67145cc44047cdbb0a7d55014f4d13bc_1440w.jpg)
 
 <center>主从异步复制</center>
 
 写请求首先发送给主副本，主副本写成功后立即返回，然后异步的更新其它副本。这种方式可用性较好，只要主副本写成功，写请求就执行成功。但是不能保证副本之间数据的强一致性，写成功返回之后从各个副本读取到的数据不保证一致，只有主副本上是最新的数据，其它副本上的数据落后，只提供最终一致性。
 
-![img](https://gitee.com/tostringcc/blog/raw/master/2020/v2-73d8d3ea3ae1ad5af6d9669982a88d70_1440w.jpg)
+![img](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/v2-73d8d3ea3ae1ad5af6d9669982a88d70_1440w.jpg)
 
 <center>异步复制失败</center>
 
 如果出现断网导致后台异步复制失败，则主副本和其它副本将长时间不一致，其它副本上的数据一直无法更新，直到网络重新连通。
 
-![img](https://gitee.com/tostringcc/blog/raw/master/2020/v2-b47a1eaada575a8fda1af357718e6410_1440w.jpg)
+![img](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/v2-b47a1eaada575a8fda1af357718e6410_1440w.jpg)
 
 <center>主副本写成功后立即宕机</center>
 
@@ -78,7 +78,7 @@ Oracle:同步复制为最高保护模式 (Maximum Protection)，异步复制为�
 
 并发环境下，无法保证系统的正确性，无法保证书顺序
 
-![image-20201202123703086](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201202123703086.png)
+![image-20201202123703086](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201202123703086.png)
 
 ## 强一致算法
 
@@ -128,17 +128,17 @@ Paxos算法一共三个阶段，通过一个决议分为两个阶段（Learn阶�
 
 **基本流程：**
 
-![image-20201202151333030](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201202151333030.png)
+![image-20201202151333030](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201202151333030.png)
 
 **部分节点失败但达到多数派：**
 
-![image-20201202151543084](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201202151543084.png)
+![image-20201202151543084](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201202151543084.png)
 
-**Proposer失败:![image-20201202151722974](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201202151722974.png)**
+**Proposer失败:![image-20201202151722974](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201202151722974.png)**
 
 **潜在问题活锁：**
 
-![image-20201202151859245](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201202151859245.png)
+![image-20201202151859245](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201202151859245.png)
 
 解决方案：生成一个随机的timeout
 
@@ -152,11 +152,11 @@ Paxos算法一共三个阶段，通过一个决议分为两个阶段（Learn阶�
 
 基本流程：
 
-![image-20201202152326631](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201202152326631.png)
+![image-20201202152326631](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201202152326631.png)
 
 减少角色，进一步简化：
 
-![image-20201202104453265](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201202104453265.png)
+![image-20201202104453265](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201202104453265.png)
 
 ### Raft
 
@@ -238,7 +238,7 @@ Raft能够在网络分区中保持一致性
 
 由于分区，我们现在有了两位不同任期的领导人。
 
-![image-20201202161342810](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201202161342810.png)
+![image-20201202161342810](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201202161342810.png)
 
 让我们添加另一个客户端，并尝试更新两个leader。
 
@@ -248,7 +248,7 @@ Raft能够在网络分区中保持一致性
 
 这将会成功，因为它可以复制到大多数。
 
-![image-20201202162115861](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201202162115861.png)
+![image-20201202162115861](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201202162115861.png)
 
 当分区恢复后
 
@@ -256,7 +256,7 @@ Raft能够在网络分区中保持一致性
 
 两个节点A和B都将回滚它们的未提交条目，并匹配新leader的日志。
 
-![image-20201202162253819](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201202162253819.png)
+![image-20201202162253819](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201202162253819.png)
 
 
 
@@ -270,7 +270,7 @@ paxos其实是一个共识算法。系统的最终一致性，不仅需要共识
 
 leader向follower同步日志,此时集群中3个节点失败，2个节点存活，结果是？
 
-![image-20201202164900734](https://gitee.com/tostringcc/blog/raw/master/2020/image-20201202164900734.png)
+![image-20201202164900734](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20201202164900734.png)
 
 可能一：
 

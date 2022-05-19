@@ -20,7 +20,7 @@ HashMap线程不安全.当面试官听到这些以后第一个问题为什么容
 
 先看下HashMap的继承关系:
 
-![image-20200820001319340](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200820001319340.png)
+![image-20200820001319340](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200820001319340.png)
 
 ### HashMap源码
 
@@ -142,7 +142,7 @@ HashMap线程不安全.当面试官听到这些以后第一个问题为什么容
 
 ### Hashmap 中 put()过程
 
-![image-20200819232123563](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200819232123563.png)y
+![image-20200819232123563](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200819232123563.png)y
 
 **源码**
 
@@ -204,11 +204,11 @@ public V put(K key, V value) {
 
 结合 Entry 类的构造方法，每次插入新元素的时候，将 bucket 原链表取出，新元素的 next 指向原链表,这就是 `头插法` 。为了更加清晰的表示 Hashmap 存储结构，再绘制一张存储结构图。
 
-![image-20200819233009617](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200819233009617.png)
+![image-20200819233009617](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200819233009617.png)
 
 ### Hashmap 中 get()过程
 
-![image-20200819233040546](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200819233040546.png)
+![image-20200819233040546](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200819233040546.png)
 
 **get()源码**
 
@@ -258,7 +258,7 @@ public V put(K key, V value) {
 
 hash 运算值是一个 int 整形值，在 java 中 int 占 4 个字节，32 位，下边通过图示来说明位运算。
 
-![image-20200819235609427](https://gitee.com/tostringcc/blog/raw/master/2020/image-20200819235609427.png)
+![image-20200819235609427](https://raw.githubusercontent.com/zhaoxiaowu/blog/master/2020/image-20200819235609427.png)
 
 length为16时在[0,15]区间内冲突为0，且雨露均沾分布均匀每个桶都可能会存放数据，而为15，14时不仅有冲突而且有些空间永远不会存放数据这就导致了资源浪费，并且散列就不会出现下标越界得到一个异常.
 
